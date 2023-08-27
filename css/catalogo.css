@@ -1,0 +1,136 @@
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/images-catalogue/captainmarvelheader.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.menu-page li .active::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 2.3px;
+    background-color: #fe7467;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.baner-text {
+    width: 100%;
+}
+
+.img-title-header {
+    width: 600%;
+    max-width: 600px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.container-catalog {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #505050;
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+}
+
+.conteiner-catalog h1 {
+    font-size: 1.8em;
+    position: relative;
+}
+
+.container-catalog h1::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #fe7467;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.card img {
+    width: 100%;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 1.4em;
+}
+
+.btn-catalog {
+    background-image: linear-gradient(to bottom, #fe7467, #fc3836);
+    border: none;
+    border-radius: 25px;
+    padding-inline: 2em;
+    padding-block: .8em;
+    font-weight: 800;
+    max-width: 10em;
+}
+
+.btn-catalog a{
+    color: #ffff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .img-title-header {
+        width: 70%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    header {
+        background-position: center left 30%;
+    }
+
+    .card {
+        min-width: 60vw;
+        max-width: 60vw;
+    }
+}
+
+.text-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+
+    .container-catalog h1::after {
+        bottom: -74px;
+    }
+}

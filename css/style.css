@@ -1,0 +1,48 @@
+*{
+    font-family: 'Alexandria', sans-serif;
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.menu-page li {
+    font-weight: 600;
+    position: relative;
+    padding-inline: 2.2em;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+
+.menu-page li a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+nav img {
+    width: 150px;
+}
+
+h1, h2{
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 600px) {
+    header nav{
+        justify-content: center;
+        gap: 3em;
+    }
+
+    .menu-page li {
+        padding-inline: 1.8em;
+    }
+}
